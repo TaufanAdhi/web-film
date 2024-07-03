@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taufan Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+
+        .resetM {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .poster {
+            height: 35rem;
+        }
+
+        span {
+            font-style: italic;
+            color: rgb(193, 9, 9);
+        }
+
+        #navbarSupportedContent ul li {
+            margin-right: 1rem;
+        }
+
+        nav {
+            background-color: #1A1A1A;
+        }
+
+        .navbar-toggler {
+            background-color: white;
+        }
+
+
+        /* populer */
+
+        .populer .card-body a:hover {
+            background-color: black;
+            color: white;
+            transition: 1s;
+        }
+
+        /* akhir populer */
+        /* corusel */
+
+        /* img */
+        .cors {
+            object-fit: cover;
+        }
+
+        /* akhir corusel */
+    </style>
+</head>
+
+<body>
+    <!-- navbar mulai -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 style="color: white;"><span>Taufan</span>Movies</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5 text-light">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light bg-success tombol" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar akhir -->
+    <!-- search -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+
+        <div class="row" id="row1">
+
+        </div>
+    </div>
+    <!-- akhir search -->
+
+    <!-- slide awal -->
+    <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators" style="bottom: -3rem;">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner d-flex">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <div class="hold" style="height: 30rem; margin: auto; width: 50rem;" data-bs-toggle="modal"
+                    data-bs-target="#thumbModal" data-name="Avengers">
+                    <a href="#">
+                        <img src="avenger.jpg" class="d-block" alt="..." height="100%" width="100%">
+                        <div class="carousel-caption d-none d-md-block text-start ps-5 opacity-0"
+                            style="background-color: rgba(0, 0, 0, 0.555); left: 22.8%; width: 50.1rem; transition: 1s;">
+                            <h5 class="fw-bold">The Avenger</h5>
+                            <p>1961 - 2019</p>
+                            <h6>Genre</h6>
+                            <p>Action,Sci-Fi</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="hold" style="height: 30rem; margin: auto; width: 50rem;" data-bs-toggle="modal"
+                    data-bs-target="#thumbModal" data-name="Naruto">
+                    <a href="#">
+                        <img src="Naruto Feast, Ariana Luberto.jpg" class="d-block" alt="..." height="100%"
+                            width="100%">
+                        <div class="carousel-caption d-none d-md-block text-start ps-5 opacity-0"
+                            style="background-color: rgba(0, 0, 0, 0.555); left: 22.8%; width: 50.1rem; transition: 1s;">
+                            <h5 class="fw-bold">Naruto Series</h5>
+                            <p>2000</p>
+                            <h6>Genre</h6>
+                            <p>Aksi, Petualangan, Fantasi</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="hold" style="height: 30rem; margin: auto; width: 50rem;" data-bs-toggle="modal"
+                    data-bs-target="#thumbModal" data-name="Dilan">
+                    <a href="#">
+                        <img src="dilan.jpg" class="d-block" alt="..." height="100%" width="100%">
+                        <div class="carousel-caption d-none d-md-block text-start ps-5 opacity-0"
+                            style="background-color: rgba(0, 0, 0, 0.555); left: 22.8%; width: 50.1rem; transition: 1s;">
+                            <h5 class="fw-bold">Dilan</h5>
+                            <p>2018-2019</p>
+                            <h6>Genre</h6>
+                            <p>Drama - Romance</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="hold" style="height: 30rem; margin: auto; width: 50rem;" data-bs-toggle="modal"
+                    data-bs-target="#thumbModal" data-name="One Piece">
+                    <a href="#">
+                        <img src="one piece.jpg" class="d-block" alt="..." height="100%" width="100%">
+                        <div class="carousel-caption d-none d-md-block text-start ps-5 opacity-0"
+                            style="background-color: rgba(0, 0, 0, 0.555); left: 22.8%; width: 50.1rem; transition: 1s;">
+                            <h5 class="fw-bold">One Piece</h5>
+                            <p>1961 - 2019</p>
+                            <h6>Genre</h6>
+                            <p> Fiksi petualangan, Fantasi ilmiah</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- slide akhir -->
+
+    <!-- membuat modal saat thumnail di click -->
+    <div class="modal fade" id="thumbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-xl" style="margin-left: 7%;">
+            <div class="modal-content" style="min-width: 1300px;">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body movieThumb">
+                    <div class="row">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class=" modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="" class="imgTD">
+                            </div>
+                            <div class="col-md">
+                                <ul class="list-group">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- akhir -->
+
+
+
+
+    <!-- most pupular  -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md">
+                <h3 class="text-bg-light"> Most Populer</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container populer">
+        <div class="row g-0">
+            <div class="col-2"></div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row g-0">
+            <div class="col-2"></div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir popular -->
+
+    <!-- genre -->
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-md-2 ">
+                <a class="text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">
+                    <h4 class="text-bg-dark ps-3 p-2">Genre<i class="bi bi-caret-up-square-fill"></i></h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3" style="width: 60%; margin-left: 5%;">
+        <div class="collapse" id="collapseWidthExample" data-bs-theme="dark">
+            <div class="card card-body">
+                <div class="row text-bg-dark genre">
+                    <div class="col-1"></div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Action</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1"></div>
+                    <div class="col-md-1 me-3">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- akhir genre -->
+
+    <!-- film -->
+    <div class="container position-relative" style="background-color: #1A1A1A;">
+        <h3 class="text-white m-0 border-bottom border-3 p-2" style="width: 15%;">Anime</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-left-circle-fill text-light position-absolute z-1 top-50 leftIFilm" viewBox="0 0 16 16">
+            <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+        </svg>
+
+        <div class="row overflow-hidden flex-nowrap g-0 position-relative" id="anime" style="height : 429px;">
+            <div class="col-2 me-2  film" style="margin-left: 0rem;">
+                <div class="card my-2 " style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2" style="margin-left: 0rem;">
+                <div class="card my-2 " style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-right-circle-fill text-light position-absolute z-1 top-50 end-0 rightIFilm"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+        </svg>
+    </div>
+
+
+    <div class="container position-relative mt-4 pb-" style="background-color: #1A1A1A;">
+        <h3 class="text-white m-0 border-bottom border-3 p-2" style="width: 15%;">Barat</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-left-circle-fill text-light position-absolute z-1 top-50 leftIFilm" viewBox="0 0 16 16">
+            <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+        </svg>
+
+
+        <div class="row overflow-hidden flex-nowrap g-0 position-relative" id="Barat" style="height : 429px;">
+            <div class="col-2 me-2  film" style="margin-left: 0rem;">
+                <div class="card my-2 " style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2" style="margin-left: 0rem;">
+                <div class="card my-2 " style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 me-2 ">
+                <div class="card my-2" style="border: none;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ps-0" style="background-color: black; color: white;">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-light">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-right-circle-fill text-light position-absolute z-1 top-50 end-0 rightIFilm"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+        </svg>
+    </div>
+
+
+<!-- footer -->
+
+    <footer class="bg-light " style="padding: 3.5rem; margin-top: 15rem;">
+        <div class="container-fluid" style="background-color: rgb(255, 255, 255);">
+            <div class="row">
+                <div class="col-md-3" style="font-size: 0.8rem;">
+                    <h3 style="font-size: 2rem; font-weight: bold; letter-spacing: -0.1rem;">Contact us</h3>
+                    <a href="" class="text-decoration-none"> +62 81331894858</a>
+                    <p class="m-0">Taufan Adhi nugroho</p>
+                    <p class="my-1">alamat : </p>
+                    <p class="">Perumahan Bukit bambe Blok eg 23 asabri atas Gg mawar 2</p>
+                </div>
+                <div class="col-md-2">
+                    <h3 style="font-size: 2rem; font-weight: bold; letter-spacing: -0.1rem;">Display</h3>
+                    <a href="" class="d-block"> Home </a>
+                    <a href="" class="d-block"> Populer</a>
+                    <a href="" class="d-block"> Anime </a>
+                    <a href="" class="d-block"> Barat </a>
+                    
+                </div>
+                <div class="col-md-3">
+                    <h3 style="font-size: 2rem; font-weight: bold; letter-spacing: -0.1rem;">Comunity</h3>
+                    <p> @Persatuan-Anime</p>
+                    <p> @Persatuan-Film indonesia</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h1 style="color: rgb(0, 0, 0); font-size: 3rem;"><span>Taufan</span>Movies</h1>
+                    <a href=""><i class="bi bi-instagram mx-2" style="font-size: 20px;"></i></a>
+                    <a href=""><i class="bi bi-github mx-2" style="font-size: 20px;"></i></a>
+                    <a href=""><i class="bi bi-tiktok mx-2" style="font-size: 20px;"></i></a>
+                    <a href=""><i class="bi bi-whatsapp mx-2" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+<!-- akhir footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="" class="imgDetail">
+                            </div>
+                            <div class="col-md">
+                                <ul class="list-group li">
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

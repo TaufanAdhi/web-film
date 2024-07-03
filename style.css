@@ -1,0 +1,53 @@
+
+.pss {
+    padding-left: 10rem;
+  
+}
+
+
+
+
+
+/* icon genre */
+.bi-caret-up-square-fill,.bi-caret-down-square-fill  {
+    margin-left: 5rem;
+}
+
+
+.collapse a{
+    text-decoration: none;
+}
+
+.genreBtn {
+    width: 8rem;
+    margin-right: 4rem;
+}
+
+
+
+/* logic Categori Slide Anime */
+
+
+.leftIFilm , .rightIFilm{
+    opacity: 0.50;
+    transition: 0.3s;
+}
+.leftIFilm:hover , .rightIFilm:hover{
+    opacity: 1;
+    
+}
+
+.film {
+    transition: 1s;
+}
+
+
+/* membuat suapaya slide bisa di hover */
+/* .hold {
+
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+
+} */
